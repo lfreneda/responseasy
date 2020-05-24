@@ -2,12 +2,13 @@
   "name": "responseasy",
   "version": "0.0.1",
   "description": ":ok_hand: An easy, simple and elegant http response builder for aws lambda functions",
-  "main": "index.js",
+  "main": "src/index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "jest --verbose"
+    "test": "npx jest --verbose",
+    "lint": "npx eslint ."
   },
   "author": "Luiz Freneda <lfreneda@gmail.com>",
   "license": "MIT",
