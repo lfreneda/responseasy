@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "npx jest --verbose",
-    "lint": "npx eslint ."
+    "lint": "npx eslint .",
+    "coverage": "npm test"
   },
   "author": "Luiz Freneda <lfreneda@gmail.com>",
   "license": "MIT",
