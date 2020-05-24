@@ -5,12 +5,12 @@
 const ResponseBuilder = require('../src/responseBuilder')
 
 describe('ResponseBuilder', () => {
-  it('Given response builder instance status code should be set to 200 as default', async () => {
+  it('Given response builder instance status code should be set to 200 as default', () => {
     const responseBuilder = new ResponseBuilder()
     expect(responseBuilder._statusCode).toBe(200)
   })
 
-  it('Given response builder instance default headers should be set as expected', async () => {
+  it('Given response builder instance default headers should be set as expected', () => {
     const responseBuilder = new ResponseBuilder({
       headers: {
         'X-Content-Type-Options': 'nosniff',
@@ -23,7 +23,7 @@ describe('ResponseBuilder', () => {
     })
   })
 
-  it('Given response builder json with status set should return response as expected', async () => {
+  it('Given response builder json with status set should return response as expected', () => {
     const responseBuilder = new ResponseBuilder({
       headers: {
         'X-Content-Type-Options': 'nosniff',
@@ -42,7 +42,7 @@ describe('ResponseBuilder', () => {
     })
   })
 
-  it('Given response builder json with status and body set should return response as expected', async () => {
+  it('Given response builder json with status and body set should return response as expected', () => {
     const responseBuilder = new ResponseBuilder({
       headers: {
         'X-Content-Type-Options': 'nosniff',
@@ -63,7 +63,7 @@ describe('ResponseBuilder', () => {
     })
   })
 
-  it('Given response builder json with status, additional headers, and body set should return response as expected', async () => {
+  it('Given response builder json with status, additional headers, and body set should return response as expected', () => {
     const responseBuilder = new ResponseBuilder({
       headers: {
         'X-Content-Type-Options': 'nosniff',
@@ -87,7 +87,7 @@ describe('ResponseBuilder', () => {
     })
   })
 
-  it('Given response builder base64 with status, additional headers, and body set should return response as expected', async () => {
+  it('Given response builder base64 with status, additional headers, and body set should return response as expected', () => {
     const responseBuilder = new ResponseBuilder({
       headers: {
         'X-Content-Type-Options': 'nosniff',
