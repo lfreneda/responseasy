@@ -1,0 +1,38 @@
+{
+  "name": "responseasy",
+  "version": "0.0.1",
+  "description": ":ok_hand: An easy, simple and elegant http response builder for aws lambda functions",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "author": "Luiz Freneda <lfreneda@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lfreneda/responseasy/issues"
+  },
+  "homepage": "https://github.com/lfreneda/responseasy#readme",
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-sonarjs": "^0.5.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^26.0.1",
+    "husky": "^4.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm test"
+    }
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true
+  }
+}
